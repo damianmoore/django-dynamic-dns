@@ -1,0 +1,2 @@
+# dynamicdns.plugins.Rackspace
+git+https://github.com/rackerlabs/python-clouddns.git

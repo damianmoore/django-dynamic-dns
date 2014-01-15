@@ -1,0 +1,14 @@
+[
+    {
+        "pk": 1,
+        "model": "dynamicdns.dnsrecord",
+        "fields": {
+            "ip": "1.2.3.4",
+            "lan_ip": "192.168.1.100",
+            "domain": "a.example.com",
+            "last_change": "2014-01-01T00:00:00.000Z",
+            "key": "ZHXPu3RTfs3oAexrwBTi8DGN5lmiH3t1pc9iGG1NZsp75UeM84",
+            "provider": "rackspace"
+        }
+    }
+]
