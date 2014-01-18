@@ -5,6 +5,8 @@ import random
 from django.conf import settings
 from django.db import models
 
+from utils import update_dns_record
+
 
 PROVIDER_CHOICES = [(name, name) for name in settings.DYNAMICDNS_PROVIDERS.keys()]
 
@@ -26,5 +28,6 @@ class DnsRecord(models.Model):
     def save(self):
         if not self.key:
             self.key = self.generate_key()
+        update_dns_record(self, ip)
         self.last_change = datetime.now()
         super(DnsRecord, self).save()

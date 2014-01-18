@@ -4,7 +4,6 @@ from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 
 from models import DnsRecord
-from utils import update_dns_record
 
 
 def dynamic_dns_read(request, domain):
@@ -48,7 +47,6 @@ def dynamic_dns_update(request, domain):
             else:
                 ip = request.META['REMOTE_ADDR']
             if ip != dns_record.ip:
-                update_dns_record(dns_record, ip)
                 dns_record.ip = ip
                 dns_record.save()
                 updated = True

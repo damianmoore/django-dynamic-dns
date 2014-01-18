@@ -72,6 +72,8 @@ A simple Python DNS server is included in this package which can be used instead
 
 Unlike any DNS service I know, this server can return an IP address depending on the location of the client requesting a lookup. Say you have a server or some kind of NAS on your home network. Most of the time you access it from within your home and would like to address it at 192.168.1.100 to avoid any looping back of packets to the router or internet, improving speed. By storing the server's LAN address as well as the WAN address of the router, the internal DNS server can identify if a client requesting a lookup is from the same WAN IP and in that case return the LAN address of the server.
 
+This DNS server also has a very small TTL value (1 second) so you shouldn't run in to caching issues - note that a lot of external providers will not let you have a TTL less than approximately 5 minutes.
+
 The built-in DNS server needs to run with suppicient permissions to listen on UDP port 53. If you are using a virtualenv you can use a combination of `sudo` and specifying which `python` to use.
 
     sudo /PATH/TO/VIRTUALENV/bin/python manage.py run_dns_server
@@ -88,7 +90,6 @@ You should get a response similar to the following. Note the `ANSWER SECTION` in
     ;; Got answer:
     ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 8559
     ;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
-    ;; WARNING: Messages has 16 extra bytes at end
 
     ;; OPT PSEUDOSECTION:
     ; EDNS: version: 0, flags:; udp: 4096
@@ -96,7 +97,7 @@ You should get a response similar to the following. Note the `ANSWER SECTION` in
     ;a.example.com.  IN  A
 
     ;; ANSWER SECTION:
-    a.example.com.  300  IN  A  192.168.1.100
+    a.example.com.  1  IN  A  192.168.1.100
 
     ;; Query time: 1 msec
     ;; SERVER: 127.0.0.1#53(127.0.0.1)
@@ -117,11 +118,11 @@ Check a domain has an alias and points to a certain IP address:
 
     dig +short A a.example.com.
 
-Show all other DNS info for a domain
+Show all other DNS info for a domain:
 
     dig a.example.com.
 
-Query a specific DNS server like `127.0.0.1` for the in-built server or `8.8.8.8` for Google's servers by using `@` and then a DNS IP.
+Query a specific DNS server like `127.0.0.1` for the in-built server or `8.8.8.8` for Google's servers by using `@` and then a DNS IP:
 
     dig @127.0.0.1 a.example.com.
 

@@ -67,7 +67,7 @@ class DnsQuery:
             packet += self.data[12:].split('\x00\x00\x29')[1]
         if not ip:
             packet += self.data[:2] + '\x81\x80'
-            packet += self.data[4:6] + '\x00\x00' + '\x00\x00\x00\x00'         # Question and Answer Counts
-            packet += self.data[12:]                                           # Original Domain Name Question
-            packet += '\xc0\x0c'                                               # Pointer to domain name
+            packet += self.data[4:6] + '\x00\x00' + '\x00\x00\x00\x00'          # Question and Answer Counts
+            packet += self.data[12:]                                            # Original Domain Name Question
+            packet += '\xc0\x0c'                                                # Pointer to domain name
         return ''.join(packet)
