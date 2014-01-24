@@ -1,7 +1,7 @@
 django-dynamic-dns
 ==================
 
-It is common to have a server or NAS on a home network that you would like to be able to occasionally access from other locations across the internet. However, most home internet connections have dynamically-assigned IP address which change every few days so you need to use a dynamic DNS service located on a static IP address. This project implements a flexible dynamic DNS service written in Python using the Django web framework.
+It is common to have a server or NAS on a home network that you would like to be able to occasionally access from other locations across the internet. However, most home internet connections have dynamically-assigned IP addresses which change every few days so you need to use a dynamic DNS service located on a static IP address. This project implements a flexible dynamic DNS service written in Python using the Django web framework.
 
 Machines on dynamic IPs can call this service at regular intervals (e.g. via cron) and when the server notices an address change it makes the relevant API call to update the DNS provider. Alternatively a simple DNS server is included which can be run instead of using an external DNS provider - see the section *Built-in DNS Server* below for more details. You will need your own domain name set with the nameservers to a DNS provider controlled via API or your own instance of the built-in DNS server.
 
@@ -130,5 +130,6 @@ Query a specific DNS server like `127.0.0.1` for the in-built server or `8.8.8.8
 Future features
 ---------------
 
-  * Rate limiting to mitigate against brute-force attacks changing record
-  * Add more DNS provider plugins
+  * Rate limiting to mitigate against brute-force attacks on updating records
+  * Adding more DNS provider plugins
+  * Support for DNSSEC in the built-in DNS server
