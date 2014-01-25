@@ -9,3 +9,4 @@ class DynamicDnsPlugin(object):
 
 from dummy import Dummy
 from rackspace import Rackspace
+from digitalocean import DigitalOcean

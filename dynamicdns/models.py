@@ -28,6 +28,6 @@ class DnsRecord(models.Model):
     def save(self):
         if not self.key:
             self.key = self.generate_key()
-        update_dns_record(self, ip)
+        update_dns_record(self, self.ip)
         self.last_change = datetime.now()
         super(DnsRecord, self).save()

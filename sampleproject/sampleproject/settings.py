@@ -91,5 +91,10 @@ DYNAMICDNS_PROVIDERS = {
         'plugin': 'dynamicdns.plugins.Rackspace',
         'username': 'YOUR_USERNAME',
         'api_key': 'YOUR_API_KEY',
-    }
+    },
+    'digitalocean': {
+        'plugin': 'dynamicdns.plugins.DigitalOcean',
+        'client_id': 'YOUR_CLIENT_ID',
+        'api_key': 'YOUR_API_KEY',
+    },
 }

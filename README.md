@@ -7,7 +7,7 @@ Machines on dynamic IPs can call this service at regular intervals (e.g. via cro
 
 It's recommended that new users check out the `sampleproject` for an example setup.
 
-Domains/subdomains that are going to be managed as aliases to dynamic IP addresses are added to the database through Django's admin interface. The last known IP for a domain is stored against the name so the service knows whether the IP is different from what it was previously. A plugin infrastructure is in place which makes it easy to add new DNS service providers. So far Rackspace Cloud DNS is the only DNS service plugin included but I'd be very happy to receive contributions for other ones.
+Domains/subdomains that are going to be managed as aliases to dynamic IP addresses are added to the database through Django's admin interface. The last known IP for a domain is stored against the name so the service knows whether the IP is different from what it was previously. A plugin infrastructure is in place which makes it easy to add new DNS service providers. So far Rackspace Cloud DNS and DigitalOcean are the only DNS service plugins included but I'd be very happy to receive contributions for other ones.
 
 
 Server configuration
@@ -29,7 +29,12 @@ Before adding your domains to the system, you will need to make a couple of addi
             'plugin': 'dynamicdns.plugins.Rackspace',
             'username': 'YOUR_USERNAME',
             'api_key': 'YOUR_API_KEY',
-        }
+        },
+        'digitalocean': {
+            'plugin': 'dynamicdns.plugins.DigitalOcean',
+            'client_id': 'YOUR_CLIENT_ID',
+            'api_key': 'YOUR_API_KEY',
+        },
     }
 
 Depending on the plugins you use, you may need to install Python dependencies. The file `optional-requirements.txt` lists which requirements are required and running `pip install -r optional-requirements.txt` will install them all.

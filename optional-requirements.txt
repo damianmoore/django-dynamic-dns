@@ -1,2 +1,9 @@
-# dynamicdns.plugins.Rackspace
-git+https://github.com/rackerlabs/python-clouddns.git
+# These are the requirements for each of the remote DNS plugins. You only need
+# to install the dependencies for the plugins you will use. Newer versions are
+# likely to work but any versions listed here are the ones that were tested.
+
+# Rackspace
+git+https://github.com/rackerlabs/python-clouddns.git@085ebc517a
+
+# DigitalOcean
+requests==2.2.1
