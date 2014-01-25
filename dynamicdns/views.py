@@ -1,4 +1,5 @@
 import json
+from time import sleep
 
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -39,6 +40,7 @@ def dynamic_dns_update(request, domain):
         except DnsRecord.DoesNotExist:
             pass  # We don't want to give away which domains are managed so we will return an auth failure
         if not dns_record or request.POST['key'] != dns_record.key:
+            sleep(2)  # Very basic rate-limiting (also depends on number of workers running)
             data['error'] = 'Authentication failure'
             status = 403
         else:

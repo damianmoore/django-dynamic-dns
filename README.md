@@ -135,6 +135,5 @@ Query a specific DNS server like `127.0.0.1` for the in-built server or `8.8.8.8
 Future features
 ---------------
 
-  * Rate limiting to mitigate against brute-force attacks on updating records
   * Adding more DNS provider plugins
   * Support for DNSSEC in the built-in DNS server
