@@ -16,6 +16,8 @@ class DigitalOcean(DynamicDnsPlugin):
         url = 'https://api.digitalocean.com/domains?client_id={}&api_key={}'.format(client_id, api_key)
         content = json.loads(requests.get(url).content)
         domain_id = None
+        if not 'domains' in content:
+            raise LookupError('Error connecting to DigitalOcean API. Status: {}'.format(content['status']))
         for domain in content['domains']:
             if domain['name'] in [self.domain, fqdn]:
                 domain_id = domain['id']
