@@ -10,8 +10,8 @@ setup(
     license = "BSD",
     keywords = "django dynamic dns server ip domain service",
     url = "https://github.com/damianmoore/django-dynamic-dns",
-    download_url = 'https://github.com/damianmoore/django-dynamic-dns/tarball/0.1.0'
-    packages=[
+    download_url = 'https://github.com/damianmoore/django-dynamic-dns/tarball/0.1.0',
+    packages = [
         'dynamicdns',
     ],
 )
