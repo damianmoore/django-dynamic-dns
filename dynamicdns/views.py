@@ -47,7 +47,7 @@ def dynamic_dns_update(request, domain):
             if 'ip' in request.POST:
                 ip = request.POST['ip']
             else:
-                ip = request.META['REMOTE_ADDR']
+                ip = request.META.get('HTTP_X_FORWARDED_FOR', '') or request.META.get('REMOTE_ADDR')
             if ip != dns_record.ip:
                 dns_record.ip = ip
                 dns_record.save()
