@@ -23,7 +23,7 @@ class Command(NoArgsCommand):
                 p = DnsQuery(data)
                 try:
                     dns_record = DnsRecord.objects.get(domain=p.domain.rstrip('.'))
-                    if dns_record.lan_ip and addr == dns_record.ip:
+                    if dns_record.lan_ip and addr[0] == dns_record.ip:
                         ip = dns_record.lan_ip
                     else:
                         ip = dns_record.ip

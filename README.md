@@ -117,6 +117,8 @@ You should get a response similar to the following. Note the `ANSWER SECTION` in
     ;; WHEN: Wed Jan 15 23:50:01 GMT 2014
     ;; MSG SIZE  rcvd: 69
 
+You're most likely going to want to bind subdomains to your instance of the built-in DNS server using `NS` records. I found that delegating a subdomain to a different nameserver on Rackspace Cloud DNS was a bit tricky as the user interface on their control panel doesn't allow you to do it. This tutorial showed it was possible on Rackspace using their API: http://wherenow.org/delegating-a-subdomain-with-rackspace-cloud-dns/
+
 
 DNS Debugging
 -------------
