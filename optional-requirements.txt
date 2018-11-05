@@ -6,4 +6,4 @@
 git+https://github.com/rackerlabs/python-clouddns.git@085ebc517a
 
 # DigitalOcean
-requests==2.2.1
+requests==2.20.0
