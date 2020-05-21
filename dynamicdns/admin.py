@@ -1,5 +1,5 @@
 from django.contrib import admin
-from models import DnsRecord
+from .models import DnsRecord
 
 
 class DnsRecordAdmin(admin.ModelAdmin):

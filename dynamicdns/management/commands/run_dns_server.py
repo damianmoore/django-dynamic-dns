@@ -2,17 +2,16 @@
 
 import socket
 
-from django.core.management.base import NoArgsCommand
+from django.core.management.base import BaseCommand
 
 from dynamicdns.models import DnsRecord
 
 
-class Command(NoArgsCommand):
+class Command(BaseCommand):
     help = 'Runs the built-in DNS server'
 
     def handle(self, **options):
-
-        print 'django-dynamic-dns built-in dns server'
+        print('django-dynamic-dns built-in dns server')
 
         udps = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         udps.bind(('', 53))
@@ -30,9 +29,9 @@ class Command(NoArgsCommand):
                 except DnsRecord.DoesNotExist:
                     ip = None
                 udps.sendto(p.answer(ip), addr)
-                print 'Answer: %s -> %s' % (p.domain, ip)
+                print(f'Answer: {p.domain} -> {ip}')
         except KeyboardInterrupt:
-            print 'Finished.'
+            print('Finished')
             udps.close()
 
 

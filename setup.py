@@ -13,5 +13,8 @@ setup(
     download_url = 'https://github.com/damianmoore/django-dynamic-dns/archive/0.1.3.zip',
     packages = [
         'dynamicdns',
+        'dynamicdns.management',
+        'dynamicdns.management.commands',
+        'dynamicdns.migrations',
     ],
 )

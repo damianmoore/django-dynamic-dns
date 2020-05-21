@@ -1,7 +1,9 @@
-from django.conf.urls import patterns, include, url
+from django.urls import include, path
+
+from .views import dynamic_dns_read, dynamic_dns_update
 
 
-urlpatterns = patterns('dynamicdns.views',
-    url(r'^update/(?P<domain>[a-z0-9-.]+)/', 'dynamic_dns_update'),
-    url(r'^read/(?P<domain>[a-z0-9-.]+)/', 'dynamic_dns_read'),
-)
+urlpatterns = [
+    path('read/<str:domain>/', dynamic_dns_read),
+    path('update/<str:domain>/', dynamic_dns_update),
+]

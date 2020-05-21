@@ -1,10 +1,10 @@
 import json
 from time import sleep
 
-from django.http import HttpResponse
+from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
-from models import DnsRecord
+from .models import DnsRecord
 
 
 def dynamic_dns_read(request, domain):
@@ -13,7 +13,7 @@ def dynamic_dns_read(request, domain):
     data['domain'] = dns_record.domain
     data['ip'] = dns_record.ip
     data['last_change'] = dns_record.last_change.isoformat()
-    return HttpResponse(json.dumps(data), mimetype="application/json")
+    return JsonResponse(data)
 
 
 @csrf_exempt
@@ -57,4 +57,4 @@ def dynamic_dns_update(request, domain):
             data['last_change'] = dns_record.last_change.isoformat()
             data['updated'] = updated
             status = 200
-    return HttpResponse(json.dumps(data), mimetype="application/json", status=status)
+    return JsonResponse(data, status=status)
