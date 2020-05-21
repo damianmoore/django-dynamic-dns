@@ -19,7 +19,10 @@ class DnsRecord(models.Model):
     provider = models.CharField(max_length=25, choices=PROVIDER_CHOICES, blank=True)
     last_change = models.DateTimeField(blank=True, null=True)
 
-    def __unicode__(self):
+    class Meta:
+        verbose_name = 'DNS Record'
+
+    def __str__(self):
         return self.domain
 
     def generate_key(self, size=50, chars=string.ascii_uppercase + string.ascii_lowercase + string.digits):

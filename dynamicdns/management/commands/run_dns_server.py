@@ -40,33 +40,33 @@ class DnsQuery:
         self.data = data
         self.domain = ''
 
-        tipo = (ord(data[2]) >> 3) & 15   # Opcode bits
-        if tipo == 0:                     # Standard query
+        tipo = int(data[2]) >> 3    # Opcode bits (what type of query we received)
+        if tipo == 0:               # Standard query
             ini = 12
-            lon = ord(data[ini])
+            lon = int(data[ini])
             while lon != 0:
-                self.domain += data[ini + 1:ini + lon + 1] + '.'
+                self.domain += data[ini + 1:ini + lon + 1].decode('utf-8') + '.'
                 ini += lon + 1
-                lon = ord(data[ini])
+                lon = int(data[ini])
 
     def answer(self, ip):
-        packet = []
+        packet = b''
         if self.domain and ip:
-            packet += self.data[:2]                                             # Transaction ID
-            packet += '\x81\x80'                                                # Flags: Standard query response, No error
-            packet += self.data[4:6] + self.data[4:6] + '\x00\x00\x00\x01'      # Question and Answer Counts
-            packet += self.data[12:].split('\x00\x00\x29')[0]                   # Original Domain Name Question
-            packet += '\xc0\x0c'                                                # Pointer to domain name
-            packet += '\x00\x01'                                                # Type: A
-            packet += '\x00\x01'                                                # Class: IN
-            packet += '\x00\x00\x00\x01'                                        # TTL: 1 second
-            packet += '\x00\x04'                                                # Data length: 4 bytes
-            packet += ''.join(map(lambda x: chr(int(x)), ip.split('.')))        # 4 bytes of IP
-            packet += '\x00\x00\x29'                                            # Additional record <Root>: type OPT
-            packet += self.data[12:].split('\x00\x00\x29')[1]
+            packet += self.data[:2]                                                     # Transaction ID
+            packet += b'\x81\x80'                                                       # Flags: Standard query response, No error
+            packet += self.data[4:6] + self.data[4:6] + b'\x00\x00\x00\x01'             # Question and Answer Counts
+            packet += self.data[12:].split(b'\x00\x00\x29')[0]                          # Original Domain Name Question
+            packet += b'\xc0\x0c'                                                       # Pointer to domain name
+            packet += b'\x00\x01'                                                       # Type: A
+            packet += b'\x00\x01'                                                       # Class: IN
+            packet += b'\x00\x00\x00\x01'                                               # TTL: 1 second
+            packet += b'\x00\x04'                                                       # Data length: 4 bytes
+            packet += b''.join(list(map(lambda x: bytes([int(x)]), ip.split('.'))))     # 4 bytes of IP
+            packet += b'\x00\x00\x29'                                                   # Additional record <Root>: type OPT
+            packet += self.data[12:].split(b'\x00\x00\x29')[1]
         if not ip:
-            packet += self.data[:2] + '\x81\x80'
-            packet += self.data[4:6] + '\x00\x00' + '\x00\x00\x00\x00'          # Question and Answer Counts
-            packet += self.data[12:]                                            # Original Domain Name Question
-            packet += '\xc0\x0c'                                                # Pointer to domain name
-        return ''.join(packet)
+            packet += self.data[:2] + b'\x81\x80'
+            packet += self.data[4:6] + b'\x00\x00' + b'\x00\x00\x00\x00'                # Question and Answer Counts
+            packet += self.data[12:]                                                    # Original Domain Name Question
+            packet += b'\xc0\x0c'                                                       # Pointer to domain name
+        return packet
