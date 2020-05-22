@@ -1,9 +1,9 @@
-from datetime import datetime
 import string
 import random
 
 from django.conf import settings
 from django.db import models
+from django.utils import timezone
 
 from .utils import update_dns_record
 
@@ -32,5 +32,5 @@ class DnsRecord(models.Model):
         if not self.key:
             self.key = self.generate_key()
         update_dns_record(self, self.ip)
-        self.last_change = datetime.now()
+        self.last_change = timezone.now()
         super(DnsRecord, self).save()
