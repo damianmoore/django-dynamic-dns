@@ -54,16 +54,15 @@ class DnsQuery:
         if self.domain and ip:
             packet += self.data[:2]                                                     # Transaction ID
             packet += b'\x81\x80'                                                       # Flags: Standard query response, No error
-            packet += self.data[4:6] + self.data[4:6] + b'\x00\x00\x00\x01'             # Question and Answer Counts
+            packet += self.data[4:6] + self.data[4:6] + b'\x00\x00\x00\x00'             # Question and Answer Counts
             packet += self.data[12:].split(b'\x00\x00\x29')[0]                          # Original Domain Name Question
             packet += b'\xc0\x0c'                                                       # Pointer to domain name
             packet += b'\x00\x01'                                                       # Type: A
             packet += b'\x00\x01'                                                       # Class: IN
-            packet += b'\x00\x00\x00\x01'                                               # TTL: 1 second
+            packet += b'\x00\x00\x00\x3c'                                               # TTL: 60 seconds
             packet += b'\x00\x04'                                                       # Data length: 4 bytes
             packet += b''.join(list(map(lambda x: bytes([int(x)]), ip.split('.'))))     # 4 bytes of IP
-            packet += b'\x00\x00\x29'                                                   # Additional record <Root>: type OPT
-            packet += self.data[12:].split(b'\x00\x00\x29')[1]
+            packet += b'\x00\x00\x29\x05\xac\x00\x00\x00\x00\x00\x00'                   # Remaining bytes
         if not ip:
             packet += self.data[:2] + b'\x81\x80'
             packet += self.data[4:6] + b'\x00\x00' + b'\x00\x00\x00\x00'                # Question and Answer Counts
