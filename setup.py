@@ -16,5 +16,6 @@ setup(
         'dynamicdns.management',
         'dynamicdns.management.commands',
         'dynamicdns.migrations',
+        'dynamicdns.plugins',
     ],
 )

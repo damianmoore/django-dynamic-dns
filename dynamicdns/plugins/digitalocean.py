@@ -16,7 +16,7 @@ class DigitalOcean(DynamicDnsPlugin):
         url = 'https://api.digitalocean.com/domains?client_id={}&api_key={}'.format(client_id, api_key)
         content = json.loads(requests.get(url).content)
         domain_id = None
-        if not 'domains' in content:
+        if 'domains' not in content:
             raise LookupError('Error connecting to DigitalOcean API. Status: {}'.format(content['status']))
         for domain in content['domains']:
             if domain['name'] in [self.domain, fqdn]:
@@ -32,11 +32,9 @@ class DigitalOcean(DynamicDnsPlugin):
         content = json.loads(requests.get(url).content)
         record_id = None
         for record in content['records']:
-            if record['record_type'] == 'A' and (
-                (subdomain and record['name'] == prefix) or
-                (not subdomain and record['name'] == '@')):
-                    record_id = record['id']
-                    break
+            if record['record_type'] == 'A' and ((subdomain and record['name'] == prefix) or (not subdomain and record['name'] == '@')):
+                record_id = record['id']
+                break
         if not record_id:
             raise LookupError('\'A\' record for {} not found in DigitalOcean API call \'/domains/{}/records\''.format(self.domain, domain_id))
 
