@@ -1,0 +1,1139 @@
+2020-05-21 10:05:19,761 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 10:05:19,765 INFO RPC interface 'supervisor' initialized
+2020-05-21 10:05:19,765 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 10:05:19,765 INFO supervisord started with pid 12
+2020-05-21 10:05:20,771 INFO spawned: 'app_server' with pid 14
+2020-05-21 10:05:20,777 INFO spawned: 'dns_server' with pid 15
+2020-05-21 10:05:26,437 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:05:26,437 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:14:10,080 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:14:11,083 INFO spawned: 'dns_server' with pid 27
+2020-05-21 10:14:15,095 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:14:16,101 INFO spawned: 'dns_server' with pid 29
+2020-05-21 10:14:20,108 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:14:22,115 INFO spawned: 'dns_server' with pid 31
+2020-05-21 10:14:27,121 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:17:33,530 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 10:17:33,534 INFO RPC interface 'supervisor' initialized
+2020-05-21 10:17:33,534 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 10:17:33,534 INFO supervisord started with pid 11
+2020-05-21 10:17:34,540 INFO spawned: 'app_server' with pid 13
+2020-05-21 10:17:34,546 INFO spawned: 'dns_server' with pid 14
+2020-05-21 10:17:40,174 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:17:40,174 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:17:43,496 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:17:44,502 INFO spawned: 'dns_server' with pid 20
+2020-05-21 10:17:48,484 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:17:49,487 INFO spawned: 'dns_server' with pid 22
+2020-05-21 10:17:53,483 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:17:55,490 INFO spawned: 'dns_server' with pid 24
+2020-05-21 10:18:00,498 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:28:10,154 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 10:28:10,158 INFO RPC interface 'supervisor' initialized
+2020-05-21 10:28:10,158 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 10:28:10,158 INFO supervisord started with pid 11
+2020-05-21 10:28:11,165 INFO spawned: 'app_server' with pid 13
+2020-05-21 10:28:11,172 INFO spawned: 'dns_server' with pid 14
+2020-05-21 10:28:16,788 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:28:16,788 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:28:16,987 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:28:17,990 INFO spawned: 'dns_server' with pid 20
+2020-05-21 10:28:22,017 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:28:23,023 INFO spawned: 'dns_server' with pid 22
+2020-05-21 10:28:26,995 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:28:29,000 INFO spawned: 'dns_server' with pid 24
+2020-05-21 10:28:34,008 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:29:23,373 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 10:29:23,376 INFO RPC interface 'supervisor' initialized
+2020-05-21 10:29:23,377 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 10:29:23,377 INFO supervisord started with pid 11
+2020-05-21 10:29:24,384 INFO spawned: 'app_server' with pid 13
+2020-05-21 10:29:24,392 INFO spawned: 'dns_server' with pid 14
+2020-05-21 10:29:30,006 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:29:30,006 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:29:57,462 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:29:58,468 INFO spawned: 'dns_server' with pid 20
+2020-05-21 10:30:02,465 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:30:03,471 INFO spawned: 'dns_server' with pid 22
+2020-05-21 10:30:07,464 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:30:09,471 INFO spawned: 'dns_server' with pid 24
+2020-05-21 10:30:14,478 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:32:06,759 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 10:32:06,765 INFO RPC interface 'supervisor' initialized
+2020-05-21 10:32:06,765 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 10:32:06,765 INFO supervisord started with pid 12
+2020-05-21 10:32:07,772 INFO spawned: 'app_server' with pid 14
+2020-05-21 10:32:07,778 INFO spawned: 'dns_server' with pid 15
+2020-05-21 10:32:13,440 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:32:13,441 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:32:22,427 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:32:23,432 INFO spawned: 'dns_server' with pid 21
+2020-05-21 10:32:27,428 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:32:28,434 INFO spawned: 'dns_server' with pid 23
+2020-05-21 10:32:32,401 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:32:34,405 INFO spawned: 'dns_server' with pid 25
+2020-05-21 10:32:39,411 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:33:00,004 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 10:33:00,009 INFO RPC interface 'supervisor' initialized
+2020-05-21 10:33:00,009 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 10:33:00,009 INFO supervisord started with pid 11
+2020-05-21 10:33:01,012 INFO spawned: 'app_server' with pid 13
+2020-05-21 10:33:01,014 INFO spawned: 'dns_server' with pid 14
+2020-05-21 10:33:05,136 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:33:06,137 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:33:06,139 INFO spawned: 'dns_server' with pid 20
+2020-05-21 10:33:10,139 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:33:12,146 INFO spawned: 'dns_server' with pid 22
+2020-05-21 10:33:15,152 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:33:18,161 INFO spawned: 'dns_server' with pid 24
+2020-05-21 10:33:23,168 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:33:34,500 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 10:33:34,504 INFO RPC interface 'supervisor' initialized
+2020-05-21 10:33:34,504 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 10:33:34,504 INFO supervisord started with pid 11
+2020-05-21 10:33:35,507 INFO spawned: 'app_server' with pid 13
+2020-05-21 10:33:35,509 INFO spawned: 'dns_server' with pid 14
+2020-05-21 10:33:41,280 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:33:41,281 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 10:33:42,941 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:33:43,948 INFO spawned: 'dns_server' with pid 20
+2020-05-21 10:33:47,909 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:33:48,911 INFO spawned: 'dns_server' with pid 22
+2020-05-21 10:33:52,935 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 10:33:54,942 INFO spawned: 'dns_server' with pid 24
+2020-05-21 10:33:59,950 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 11:37:35,548 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 11:37:35,551 INFO RPC interface 'supervisor' initialized
+2020-05-21 11:37:35,551 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 11:37:35,551 INFO supervisord started with pid 11
+2020-05-21 11:37:36,557 INFO spawned: 'app_server' with pid 13
+2020-05-21 11:37:36,565 INFO spawned: 'dns_server' with pid 14
+2020-05-21 11:37:42,158 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 11:37:42,158 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 11:37:44,493 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 11:37:45,498 INFO spawned: 'dns_server' with pid 20
+2020-05-21 11:37:49,480 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 11:37:50,485 INFO spawned: 'dns_server' with pid 22
+2020-05-21 11:37:54,489 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 11:37:56,495 INFO spawned: 'dns_server' with pid 24
+2020-05-21 11:38:01,502 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 11:38:24,081 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 11:38:24,084 INFO RPC interface 'supervisor' initialized
+2020-05-21 11:38:24,084 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 11:38:24,084 INFO supervisord started with pid 11
+2020-05-21 11:38:25,091 INFO spawned: 'app_server' with pid 13
+2020-05-21 11:38:25,097 INFO spawned: 'dns_server' with pid 14
+2020-05-21 11:38:30,734 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 11:38:30,734 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 11:38:31,911 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 11:38:32,917 INFO spawned: 'dns_server' with pid 20
+2020-05-21 11:38:36,887 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 11:38:37,889 INFO spawned: 'dns_server' with pid 22
+2020-05-21 11:38:41,899 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 11:38:43,906 INFO spawned: 'dns_server' with pid 24
+2020-05-21 11:38:48,914 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 11:39:14,759 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 11:39:14,762 INFO RPC interface 'supervisor' initialized
+2020-05-21 11:39:14,763 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 11:39:14,763 INFO supervisord started with pid 12
+2020-05-21 11:39:15,769 INFO spawned: 'app_server' with pid 14
+2020-05-21 11:39:15,775 INFO spawned: 'dns_server' with pid 15
+2020-05-21 11:39:19,016 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 11:39:20,019 INFO spawned: 'dns_server' with pid 21
+2020-05-21 11:39:21,020 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 11:39:24,054 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 11:39:26,061 INFO spawned: 'dns_server' with pid 23
+2020-05-21 11:39:29,019 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 11:39:32,028 INFO spawned: 'dns_server' with pid 25
+2020-05-21 11:39:37,036 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 12:46:59,060 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 12:46:59,063 INFO RPC interface 'supervisor' initialized
+2020-05-21 12:46:59,064 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 12:46:59,064 INFO supervisord started with pid 11
+2020-05-21 12:47:00,069 INFO spawned: 'app_server' with pid 13
+2020-05-21 12:47:00,072 INFO spawned: 'dns_server' with pid 14
+2020-05-21 12:47:05,667 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 12:47:05,668 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 12:47:52,420 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 12:47:53,423 INFO spawned: 'dns_server' with pid 26
+2020-05-21 12:47:57,428 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 12:47:58,434 INFO spawned: 'dns_server' with pid 28
+2020-05-21 12:48:03,443 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 12:52:04,693 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 12:52:04,697 INFO RPC interface 'supervisor' initialized
+2020-05-21 12:52:04,697 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 12:52:04,697 INFO supervisord started with pid 13
+2020-05-21 12:52:05,703 INFO spawned: 'app_server' with pid 15
+2020-05-21 12:52:05,709 INFO spawned: 'dns_server' with pid 16
+2020-05-21 12:52:11,316 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 12:52:11,316 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 12:52:14,967 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 12:52:15,972 INFO spawned: 'dns_server' with pid 22
+2020-05-21 12:52:19,942 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 12:52:20,948 INFO spawned: 'dns_server' with pid 24
+2020-05-21 12:52:24,910 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 12:52:26,913 INFO spawned: 'dns_server' with pid 26
+2020-05-21 12:52:39,577 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 12:52:39,580 INFO RPC interface 'supervisor' initialized
+2020-05-21 12:52:39,580 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 12:52:39,580 INFO supervisord started with pid 11
+2020-05-21 12:52:40,586 INFO spawned: 'app_server' with pid 13
+2020-05-21 12:52:40,592 INFO spawned: 'dns_server' with pid 14
+2020-05-21 12:52:45,215 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 12:52:46,217 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 12:52:46,222 INFO spawned: 'dns_server' with pid 20
+2020-05-21 12:52:51,230 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 12:54:33,469 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 12:54:33,472 INFO RPC interface 'supervisor' initialized
+2020-05-21 12:54:33,473 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 12:54:33,473 INFO supervisord started with pid 11
+2020-05-21 12:54:34,478 INFO spawned: 'app_server' with pid 13
+2020-05-21 12:54:34,484 INFO spawned: 'dns_server' with pid 14
+2020-05-21 12:54:37,874 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 12:54:38,880 INFO spawned: 'dns_server' with pid 20
+2020-05-21 12:54:39,883 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 12:54:43,888 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 12:55:07,412 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 12:55:07,415 INFO RPC interface 'supervisor' initialized
+2020-05-21 12:55:07,415 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 12:55:07,415 INFO supervisord started with pid 11
+2020-05-21 12:55:08,421 INFO spawned: 'app_server' with pid 13
+2020-05-21 12:55:08,426 INFO spawned: 'dns_server' with pid 14
+2020-05-21 12:55:14,046 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 12:55:14,046 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 12:55:15,471 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 12:55:16,476 INFO spawned: 'dns_server' with pid 20
+2020-05-21 12:55:21,484 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 12:56:23,927 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 12:56:23,933 INFO RPC interface 'supervisor' initialized
+2020-05-21 12:56:23,933 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 12:56:23,933 INFO supervisord started with pid 11
+2020-05-21 12:56:24,936 INFO spawned: 'app_server' with pid 13
+2020-05-21 12:56:24,938 INFO spawned: 'dns_server' with pid 14
+2020-05-21 12:56:30,555 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 12:56:30,555 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 12:57:45,913 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 12:57:45,916 INFO RPC interface 'supervisor' initialized
+2020-05-21 12:57:45,916 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 12:57:45,916 INFO supervisord started with pid 12
+2020-05-21 12:57:46,919 INFO spawned: 'app_server' with pid 14
+2020-05-21 12:57:46,921 INFO spawned: 'dns_server' with pid 15
+2020-05-21 12:57:49,801 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 12:57:50,807 INFO spawned: 'dns_server' with pid 21
+2020-05-21 12:57:52,811 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 12:57:55,815 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:00:27,124 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:00:27,434 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:00:27,434 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:00:27,435 INFO supervisord started with pid 11
+2020-05-21 13:00:28,440 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:00:28,443 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:00:34,033 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:00:34,034 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:00:50,992 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:00:51,998 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:00:57,006 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:05:20,710 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:05:21,020 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:05:21,020 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:05:21,021 INFO supervisord started with pid 11
+2020-05-21 13:05:22,026 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:05:22,032 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:05:24,673 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:05:25,679 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:05:27,683 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:05:30,687 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:06:51,994 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:06:52,298 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:06:52,298 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:06:52,298 INFO supervisord started with pid 11
+2020-05-21 13:06:53,301 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:06:53,304 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:06:58,899 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:06:58,900 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:07:01,953 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:07:02,959 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:07:07,967 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:08:24,572 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:08:24,882 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:08:24,882 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:08:24,884 INFO supervisord started with pid 11
+2020-05-21 13:08:25,890 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:08:25,897 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:08:31,531 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:08:31,532 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:08:33,375 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:08:34,380 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:08:39,388 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:09:24,894 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:09:24,897 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:09:24,898 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:09:24,898 INFO supervisord started with pid 11
+2020-05-21 13:09:25,904 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:09:25,909 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:09:31,501 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:09:31,502 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:19:33,567 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:19:34,571 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:19:39,579 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:20:20,848 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:20:21,153 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:20:21,153 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:20:21,153 INFO supervisord started with pid 11
+2020-05-21 13:20:22,159 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:20:22,165 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:20:27,766 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:20:27,767 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:20:28,676 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:20:29,682 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:20:34,690 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:21:49,160 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:21:49,470 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:21:49,471 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:21:49,472 INFO supervisord started with pid 12
+2020-05-21 13:21:50,478 INFO spawned: 'app_server' with pid 14
+2020-05-21 13:21:50,484 INFO spawned: 'dns_server' with pid 15
+2020-05-21 13:21:51,359 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:21:52,361 INFO spawned: 'dns_server' with pid 21
+2020-05-21 13:21:56,367 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:21:57,368 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:22:37,380 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:22:37,689 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:22:37,690 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:22:37,691 INFO supervisord started with pid 11
+2020-05-21 13:22:38,697 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:22:38,703 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:22:39,469 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:22:40,476 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:22:44,484 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:22:45,485 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:24:05,662 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:24:05,665 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:24:05,665 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:24:05,666 INFO supervisord started with pid 11
+2020-05-21 13:24:06,671 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:24:06,677 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:24:12,313 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:24:12,313 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:24:18,949 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:24:19,955 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:24:24,963 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:26:21,346 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:26:21,656 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:26:21,656 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:26:21,657 INFO supervisord started with pid 12
+2020-05-21 13:26:22,663 INFO spawned: 'app_server' with pid 14
+2020-05-21 13:26:22,666 INFO spawned: 'dns_server' with pid 15
+2020-05-21 13:26:23,710 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:26:24,713 INFO spawned: 'dns_server' with pid 21
+2020-05-21 13:26:27,717 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:26:29,720 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:28:39,564 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:28:39,873 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:28:39,874 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:28:39,875 INFO supervisord started with pid 12
+2020-05-21 13:28:40,881 INFO spawned: 'app_server' with pid 14
+2020-05-21 13:28:40,887 INFO spawned: 'dns_server' with pid 15
+2020-05-21 13:28:46,487 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:28:46,487 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:28:48,945 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:28:49,948 INFO spawned: 'dns_server' with pid 21
+2020-05-21 13:28:54,954 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:31:25,168 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:31:25,477 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:31:25,478 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:31:25,479 INFO supervisord started with pid 11
+2020-05-21 13:31:26,484 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:31:26,490 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:31:32,090 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:31:32,090 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:31:34,220 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:31:35,226 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:31:40,234 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:32:57,018 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:32:57,328 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:32:57,328 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:32:57,330 INFO supervisord started with pid 11
+2020-05-21 13:32:58,336 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:32:58,341 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:33:01,102 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:33:02,108 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:33:04,112 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:33:07,117 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:36:38,644 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:36:38,954 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:36:38,955 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:36:38,956 INFO supervisord started with pid 11
+2020-05-21 13:36:39,962 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:36:39,968 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:36:42,347 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:36:43,352 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:36:45,356 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:36:48,360 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:37:32,999 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:37:33,003 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:37:33,003 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:37:33,003 INFO supervisord started with pid 11
+2020-05-21 13:37:34,009 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:37:34,014 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:37:39,623 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:37:39,624 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:37:42,768 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:37:43,774 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:37:48,781 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:39:08,076 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:39:08,386 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:39:08,386 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:39:08,387 INFO supervisord started with pid 11
+2020-05-21 13:39:09,391 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:39:09,394 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:39:14,999 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:39:14,999 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:39:23,740 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:39:24,746 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:39:29,754 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:43:47,346 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:43:47,653 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:43:47,654 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:43:47,654 INFO supervisord started with pid 11
+2020-05-21 13:43:48,659 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:43:48,664 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:43:54,327 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:43:54,328 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:47:31,144 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:47:31,454 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:47:31,454 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:47:31,455 INFO supervisord started with pid 11
+2020-05-21 13:47:32,462 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:47:32,467 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:47:35,396 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:47:36,402 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:47:38,406 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:47:41,410 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:48:39,283 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:48:39,286 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:48:39,286 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:48:39,286 INFO supervisord started with pid 11
+2020-05-21 13:48:40,292 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:48:40,298 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:48:45,902 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:48:45,903 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:49:04,843 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:49:05,846 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:49:09,876 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:49:10,880 INFO spawned: 'dns_server' with pid 22
+2020-05-21 13:49:14,903 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:49:16,910 INFO spawned: 'dns_server' with pid 24
+2020-05-21 13:49:21,917 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:49:58,817 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:49:58,824 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:49:58,824 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:49:58,825 INFO supervisord started with pid 11
+2020-05-21 13:49:59,829 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:49:59,833 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:50:05,575 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:50:05,575 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:50:10,852 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:50:11,858 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:50:16,865 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:51:00,214 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:51:00,217 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:51:00,217 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:51:00,217 INFO supervisord started with pid 11
+2020-05-21 13:51:01,220 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:51:01,222 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:51:06,391 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:51:06,391 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:51:06,462 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:51:07,468 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:51:12,476 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:52:09,253 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:52:09,257 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:52:09,257 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:52:09,257 INFO supervisord started with pid 11
+2020-05-21 13:52:10,263 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:52:10,268 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:52:15,874 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:52:15,874 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:52:19,840 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:52:20,843 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:52:25,849 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:53:11,207 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:53:11,210 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:53:11,210 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:53:11,211 INFO supervisord started with pid 11
+2020-05-21 13:53:12,217 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:53:12,220 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:53:17,822 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:53:17,822 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:55:51,724 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:55:51,728 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:55:51,728 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:55:51,728 INFO supervisord started with pid 11
+2020-05-21 13:55:52,734 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:55:52,739 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:55:58,332 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:55:58,332 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:56:34,551 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:56:34,555 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:56:34,556 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:56:34,556 INFO supervisord started with pid 11
+2020-05-21 13:56:35,561 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:56:35,565 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:56:41,147 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:56:41,148 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:56:43,295 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 13:56:44,300 INFO spawned: 'dns_server' with pid 20
+2020-05-21 13:56:49,308 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:57:30,164 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:57:30,167 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:57:30,167 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:57:30,167 INFO supervisord started with pid 11
+2020-05-21 13:57:31,173 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:57:31,176 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:57:36,793 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:57:36,793 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:58:46,236 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:58:46,240 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:58:46,240 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:58:46,240 INFO supervisord started with pid 11
+2020-05-21 13:58:47,246 INFO spawned: 'app_server' with pid 13
+2020-05-21 13:58:47,251 INFO spawned: 'dns_server' with pid 14
+2020-05-21 13:58:52,844 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:58:52,845 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 13:59:54,517 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 13:59:54,520 INFO RPC interface 'supervisor' initialized
+2020-05-21 13:59:54,520 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 13:59:54,520 INFO supervisord started with pid 12
+2020-05-21 13:59:55,526 INFO spawned: 'app_server' with pid 14
+2020-05-21 13:59:55,532 INFO spawned: 'dns_server' with pid 15
+2020-05-21 14:00:01,136 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:00:01,136 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:01:58,728 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 14:01:58,731 INFO RPC interface 'supervisor' initialized
+2020-05-21 14:01:58,732 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 14:01:58,732 INFO supervisord started with pid 11
+2020-05-21 14:01:59,737 INFO spawned: 'app_server' with pid 13
+2020-05-21 14:01:59,739 INFO spawned: 'dns_server' with pid 14
+2020-05-21 14:02:05,340 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:02:05,341 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:02:17,058 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:02:18,062 INFO spawned: 'dns_server' with pid 20
+2020-05-21 14:02:23,069 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:10:16,789 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:10:17,793 INFO spawned: 'dns_server' with pid 22
+2020-05-21 14:10:22,800 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:10:26,795 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:10:27,800 INFO spawned: 'dns_server' with pid 24
+2020-05-21 14:10:32,808 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:12:20,211 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 14:12:20,214 INFO RPC interface 'supervisor' initialized
+2020-05-21 14:12:20,214 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 14:12:20,215 INFO supervisord started with pid 11
+2020-05-21 14:12:21,220 INFO spawned: 'app_server' with pid 13
+2020-05-21 14:12:21,223 INFO spawned: 'dns_server' with pid 14
+2020-05-21 14:12:26,806 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:12:26,807 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:14:26,301 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 14:14:26,305 INFO RPC interface 'supervisor' initialized
+2020-05-21 14:14:26,305 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 14:14:26,305 INFO supervisord started with pid 11
+2020-05-21 14:14:27,312 INFO spawned: 'app_server' with pid 13
+2020-05-21 14:14:27,320 INFO spawned: 'dns_server' with pid 14
+2020-05-21 14:14:32,923 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:14:32,923 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:14:36,708 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:14:37,712 INFO spawned: 'dns_server' with pid 20
+2020-05-21 14:14:42,719 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:15:44,515 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 14:15:44,518 INFO RPC interface 'supervisor' initialized
+2020-05-21 14:15:44,518 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 14:15:44,518 INFO supervisord started with pid 11
+2020-05-21 14:15:45,524 INFO spawned: 'app_server' with pid 13
+2020-05-21 14:15:45,530 INFO spawned: 'dns_server' with pid 14
+2020-05-21 14:15:51,134 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:15:51,134 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:15:55,195 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:15:56,198 INFO spawned: 'dns_server' with pid 20
+2020-05-21 14:16:01,204 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:16:22,483 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 14:16:22,486 INFO RPC interface 'supervisor' initialized
+2020-05-21 14:16:22,486 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 14:16:22,487 INFO supervisord started with pid 11
+2020-05-21 14:16:23,492 INFO spawned: 'app_server' with pid 13
+2020-05-21 14:16:23,498 INFO spawned: 'dns_server' with pid 14
+2020-05-21 14:16:29,200 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:16:29,200 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:18:50,441 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 14:18:50,445 INFO RPC interface 'supervisor' initialized
+2020-05-21 14:18:50,445 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 14:18:50,445 INFO supervisord started with pid 11
+2020-05-21 14:18:51,451 INFO spawned: 'app_server' with pid 13
+2020-05-21 14:18:51,456 INFO spawned: 'dns_server' with pid 14
+2020-05-21 14:18:57,062 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:18:57,062 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:19:05,565 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:19:06,571 INFO spawned: 'dns_server' with pid 20
+2020-05-21 14:19:10,595 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:19:11,600 INFO spawned: 'dns_server' with pid 22
+2020-05-21 14:19:15,629 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:19:17,636 INFO spawned: 'dns_server' with pid 24
+2020-05-21 14:19:22,644 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:20:10,216 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 14:20:10,219 INFO RPC interface 'supervisor' initialized
+2020-05-21 14:20:10,219 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 14:20:10,220 INFO supervisord started with pid 11
+2020-05-21 14:20:11,224 INFO spawned: 'app_server' with pid 13
+2020-05-21 14:20:11,227 INFO spawned: 'dns_server' with pid 14
+2020-05-21 14:20:16,176 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:20:17,178 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:20:17,183 INFO spawned: 'dns_server' with pid 20
+2020-05-21 14:20:21,153 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:20:23,160 INFO spawned: 'dns_server' with pid 22
+2020-05-21 14:20:28,168 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:21:35,467 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 14:21:35,470 INFO RPC interface 'supervisor' initialized
+2020-05-21 14:21:35,470 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 14:21:35,470 INFO supervisord started with pid 11
+2020-05-21 14:21:36,476 INFO spawned: 'app_server' with pid 13
+2020-05-21 14:21:36,483 INFO spawned: 'dns_server' with pid 14
+2020-05-21 14:21:42,082 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:21:42,082 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:21:54,311 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:21:55,315 INFO spawned: 'dns_server' with pid 20
+2020-05-21 14:21:59,340 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:22:00,345 INFO spawned: 'dns_server' with pid 22
+2020-05-21 14:22:04,338 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:22:06,344 INFO spawned: 'dns_server' with pid 24
+2020-05-21 14:22:11,352 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:23:24,989 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 14:23:24,993 INFO RPC interface 'supervisor' initialized
+2020-05-21 14:23:24,993 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 14:23:24,993 INFO supervisord started with pid 11
+2020-05-21 14:23:25,999 INFO spawned: 'app_server' with pid 13
+2020-05-21 14:23:26,005 INFO spawned: 'dns_server' with pid 14
+2020-05-21 14:23:31,663 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:23:31,663 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:23:44,285 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:23:45,290 INFO spawned: 'dns_server' with pid 20
+2020-05-21 14:23:49,287 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:23:50,293 INFO spawned: 'dns_server' with pid 22
+2020-05-21 14:23:54,316 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:23:56,323 INFO spawned: 'dns_server' with pid 24
+2020-05-21 14:24:01,330 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:24:54,613 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 14:24:54,617 INFO RPC interface 'supervisor' initialized
+2020-05-21 14:24:54,617 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 14:24:54,618 INFO supervisord started with pid 12
+2020-05-21 14:24:55,620 INFO spawned: 'app_server' with pid 14
+2020-05-21 14:24:55,623 INFO spawned: 'dns_server' with pid 15
+2020-05-21 14:25:01,246 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:25:01,246 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:25:04,806 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:25:05,812 INFO spawned: 'dns_server' with pid 21
+2020-05-21 14:25:09,808 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:25:10,814 INFO spawned: 'dns_server' with pid 23
+2020-05-21 14:25:14,779 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:25:16,783 INFO spawned: 'dns_server' with pid 25
+2020-05-21 14:25:21,790 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:58:26,303 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 14:58:26,307 INFO RPC interface 'supervisor' initialized
+2020-05-21 14:58:26,307 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 14:58:26,307 INFO supervisord started with pid 11
+2020-05-21 14:58:27,309 INFO spawned: 'app_server' with pid 13
+2020-05-21 14:58:27,312 INFO spawned: 'dns_server' with pid 14
+2020-05-21 14:58:32,575 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:58:32,575 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 14:58:32,642 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:58:33,647 INFO spawned: 'dns_server' with pid 20
+2020-05-21 14:58:37,667 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:58:38,673 INFO spawned: 'dns_server' with pid 22
+2020-05-21 14:58:42,670 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 14:58:44,677 INFO spawned: 'dns_server' with pid 24
+2020-05-21 14:58:49,683 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:04:48,969 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:04:49,974 INFO spawned: 'dns_server' with pid 26
+2020-05-21 15:04:53,998 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:04:55,004 INFO spawned: 'dns_server' with pid 28
+2020-05-21 15:05:00,012 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:05:02,247 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:05:03,252 INFO spawned: 'dns_server' with pid 30
+2020-05-21 15:05:07,217 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:05:08,221 INFO spawned: 'dns_server' with pid 32
+2020-05-21 15:05:12,253 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:05:14,257 INFO spawned: 'dns_server' with pid 34
+2020-05-21 15:05:19,264 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:06:39,678 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:06:40,684 INFO spawned: 'dns_server' with pid 36
+2020-05-21 15:06:44,678 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:06:45,684 INFO spawned: 'dns_server' with pid 38
+2020-05-21 15:06:49,651 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:06:51,657 INFO spawned: 'dns_server' with pid 40
+2020-05-21 15:07:31,758 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 15:07:31,761 INFO RPC interface 'supervisor' initialized
+2020-05-21 15:07:31,761 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 15:07:31,762 INFO supervisord started with pid 11
+2020-05-21 15:07:32,768 INFO spawned: 'app_server' with pid 13
+2020-05-21 15:07:32,774 INFO spawned: 'dns_server' with pid 14
+2020-05-21 15:07:38,416 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:07:38,416 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:07:45,457 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:07:46,460 INFO spawned: 'dns_server' with pid 20
+2020-05-21 15:07:50,489 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:07:51,494 INFO spawned: 'dns_server' with pid 22
+2020-05-21 15:07:55,451 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:07:57,458 INFO spawned: 'dns_server' with pid 24
+2020-05-21 15:08:02,467 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:09:41,482 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:09:42,487 INFO spawned: 'dns_server' with pid 26
+2020-05-21 15:09:46,504 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:09:47,510 INFO spawned: 'dns_server' with pid 28
+2020-05-21 15:09:51,486 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:09:53,489 INFO spawned: 'dns_server' with pid 30
+2020-05-21 15:09:58,496 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:15:26,416 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 15:15:26,420 INFO RPC interface 'supervisor' initialized
+2020-05-21 15:15:26,420 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 15:15:26,420 INFO supervisord started with pid 11
+2020-05-21 15:15:27,426 INFO spawned: 'app_server' with pid 13
+2020-05-21 15:15:27,432 INFO spawned: 'dns_server' with pid 14
+2020-05-21 15:15:33,056 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:15:33,057 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:18:19,980 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 15:18:19,983 INFO RPC interface 'supervisor' initialized
+2020-05-21 15:18:19,983 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 15:18:19,984 INFO supervisord started with pid 11
+2020-05-21 15:18:20,986 INFO spawned: 'app_server' with pid 13
+2020-05-21 15:18:20,989 INFO spawned: 'dns_server' with pid 14
+2020-05-21 15:18:26,594 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:18:26,594 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:18:31,863 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:18:32,867 INFO spawned: 'dns_server' with pid 20
+2020-05-21 15:18:36,867 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:18:37,872 INFO spawned: 'dns_server' with pid 22
+2020-05-21 15:18:41,865 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:18:43,873 INFO spawned: 'dns_server' with pid 24
+2020-05-21 15:18:48,880 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:18:59,356 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 15:18:59,360 INFO RPC interface 'supervisor' initialized
+2020-05-21 15:18:59,360 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 15:18:59,360 INFO supervisord started with pid 14
+2020-05-21 15:19:00,366 INFO spawned: 'app_server' with pid 16
+2020-05-21 15:19:00,373 INFO spawned: 'dns_server' with pid 17
+2020-05-21 15:19:06,006 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:19:06,006 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:19:08,986 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:19:09,992 INFO spawned: 'dns_server' with pid 23
+2020-05-21 15:19:14,010 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:19:15,015 INFO spawned: 'dns_server' with pid 25
+2020-05-21 15:19:18,990 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:19:20,996 INFO spawned: 'dns_server' with pid 27
+2020-05-21 15:19:26,004 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:19:43,497 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 15:19:43,502 INFO RPC interface 'supervisor' initialized
+2020-05-21 15:19:43,502 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 15:19:43,502 INFO supervisord started with pid 12
+2020-05-21 15:19:44,506 INFO spawned: 'app_server' with pid 14
+2020-05-21 15:19:44,508 INFO spawned: 'dns_server' with pid 15
+2020-05-21 15:19:50,336 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:19:50,337 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:19:52,561 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:19:53,567 INFO spawned: 'dns_server' with pid 21
+2020-05-21 15:19:57,525 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:19:58,528 INFO spawned: 'dns_server' with pid 23
+2020-05-21 15:20:03,535 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:25:36,486 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 15:25:36,490 INFO RPC interface 'supervisor' initialized
+2020-05-21 15:25:36,490 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 15:25:36,491 INFO supervisord started with pid 11
+2020-05-21 15:25:37,496 INFO spawned: 'app_server' with pid 13
+2020-05-21 15:25:37,502 INFO spawned: 'dns_server' with pid 14
+2020-05-21 15:25:43,124 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:25:43,124 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:27:21,042 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:27:22,047 INFO spawned: 'dns_server' with pid 20
+2020-05-21 15:27:26,040 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:27:27,046 INFO spawned: 'dns_server' with pid 22
+2020-05-21 15:27:32,054 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:28:13,768 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 15:28:13,772 INFO RPC interface 'supervisor' initialized
+2020-05-21 15:28:13,772 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 15:28:13,772 INFO supervisord started with pid 13
+2020-05-21 15:28:14,775 INFO spawned: 'app_server' with pid 15
+2020-05-21 15:28:14,777 INFO spawned: 'dns_server' with pid 16
+2020-05-21 15:28:20,376 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:28:20,376 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:28:22,757 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:28:23,761 INFO spawned: 'dns_server' with pid 22
+2020-05-21 15:28:28,768 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:29:20,149 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 15:29:20,153 INFO RPC interface 'supervisor' initialized
+2020-05-21 15:29:20,153 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 15:29:20,153 INFO supervisord started with pid 11
+2020-05-21 15:29:21,159 INFO spawned: 'app_server' with pid 13
+2020-05-21 15:29:21,165 INFO spawned: 'dns_server' with pid 14
+2020-05-21 15:29:26,821 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:29:26,821 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:29:33,786 INFO exited: dns_server (exit status 1; not expected)
+2020-05-21 15:29:34,792 INFO spawned: 'dns_server' with pid 20
+2020-05-21 15:29:39,798 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:29:55,239 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 15:29:55,243 INFO RPC interface 'supervisor' initialized
+2020-05-21 15:29:55,243 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 15:29:55,243 INFO supervisord started with pid 11
+2020-05-21 15:29:56,250 INFO spawned: 'app_server' with pid 13
+2020-05-21 15:29:56,257 INFO spawned: 'dns_server' with pid 14
+2020-05-21 15:30:01,891 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:30:01,891 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:32:42,890 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 15:32:42,893 INFO RPC interface 'supervisor' initialized
+2020-05-21 15:32:42,894 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 15:32:42,894 INFO supervisord started with pid 11
+2020-05-21 15:32:43,900 INFO spawned: 'app_server' with pid 13
+2020-05-21 15:32:43,905 INFO spawned: 'dns_server' with pid 14
+2020-05-21 15:32:49,547 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:32:49,547 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:45:36,251 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 15:45:36,255 INFO RPC interface 'supervisor' initialized
+2020-05-21 15:45:36,255 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 15:45:36,255 INFO supervisord started with pid 11
+2020-05-21 15:45:37,258 INFO spawned: 'app_server' with pid 13
+2020-05-21 15:45:37,260 INFO spawned: 'dns_server' with pid 14
+2020-05-21 15:45:42,920 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:45:42,920 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:52:08,226 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 15:52:08,229 INFO RPC interface 'supervisor' initialized
+2020-05-21 15:52:08,229 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 15:52:08,230 INFO supervisord started with pid 11
+2020-05-21 15:52:09,236 INFO spawned: 'app_server' with pid 13
+2020-05-21 15:52:09,238 INFO spawned: 'dns_server' with pid 14
+2020-05-21 15:52:14,851 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:52:14,852 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:53:37,187 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 15:53:37,190 INFO RPC interface 'supervisor' initialized
+2020-05-21 15:53:37,191 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 15:53:37,191 INFO supervisord started with pid 11
+2020-05-21 15:53:38,196 INFO spawned: 'app_server' with pid 13
+2020-05-21 15:53:38,202 INFO spawned: 'dns_server' with pid 14
+2020-05-21 15:53:38,619 INFO exited: app_server (exit status 1; not expected)
+2020-05-21 15:53:39,624 INFO spawned: 'app_server' with pid 17
+2020-05-21 15:53:39,997 INFO exited: app_server (exit status 1; not expected)
+2020-05-21 15:53:42,002 INFO spawned: 'app_server' with pid 19
+2020-05-21 15:53:42,366 INFO exited: app_server (exit status 1; not expected)
+2020-05-21 15:53:43,368 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:53:45,376 INFO spawned: 'app_server' with pid 21
+2020-05-21 15:53:45,730 INFO exited: app_server (exit status 1; not expected)
+2020-05-21 15:53:46,732 INFO gave up: app_server entered FATAL state, too many start retries too quickly
+2020-05-21 15:55:04,991 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 15:55:04,994 INFO RPC interface 'supervisor' initialized
+2020-05-21 15:55:04,994 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 15:55:04,995 INFO supervisord started with pid 13
+2020-05-21 15:55:06,001 INFO spawned: 'app_server' with pid 15
+2020-05-21 15:55:06,007 INFO spawned: 'dns_server' with pid 16
+2020-05-21 15:55:11,071 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:55:11,071 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:58:40,847 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 15:58:40,850 INFO RPC interface 'supervisor' initialized
+2020-05-21 15:58:40,851 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 15:58:40,851 INFO supervisord started with pid 11
+2020-05-21 15:58:41,857 INFO spawned: 'app_server' with pid 13
+2020-05-21 15:58:41,865 INFO spawned: 'dns_server' with pid 14
+2020-05-21 15:58:46,873 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 15:58:46,873 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 16:01:29,493 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 16:01:29,497 INFO RPC interface 'supervisor' initialized
+2020-05-21 16:01:29,497 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 16:01:29,498 INFO supervisord started with pid 11
+2020-05-21 16:01:30,504 INFO spawned: 'app_server' with pid 13
+2020-05-21 16:01:30,512 INFO spawned: 'dns_server' with pid 14
+2020-05-21 16:01:35,513 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 16:01:35,513 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 16:03:25,914 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 16:03:25,918 INFO RPC interface 'supervisor' initialized
+2020-05-21 16:03:25,918 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 16:03:25,918 INFO supervisord started with pid 11
+2020-05-21 16:03:26,923 INFO spawned: 'app_server' with pid 13
+2020-05-21 16:03:26,929 INFO spawned: 'dns_server' with pid 14
+2020-05-21 16:03:32,061 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 16:03:32,061 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 16:04:47,462 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 16:04:47,465 INFO RPC interface 'supervisor' initialized
+2020-05-21 16:04:47,465 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 16:04:47,466 INFO supervisord started with pid 11
+2020-05-21 16:04:48,471 INFO spawned: 'app_server' with pid 13
+2020-05-21 16:04:48,478 INFO spawned: 'dns_server' with pid 14
+2020-05-21 16:04:53,485 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 16:04:53,485 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 22:40:40,312 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 22:40:40,316 INFO RPC interface 'supervisor' initialized
+2020-05-21 22:40:40,316 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 22:40:40,317 INFO supervisord started with pid 11
+2020-05-21 22:40:41,318 INFO spawnerr: can't find command './srv/standalone/run_app_server.sh'
+2020-05-21 22:40:41,320 INFO spawned: 'dns_server' with pid 13
+2020-05-21 22:40:42,322 INFO spawnerr: can't find command './srv/standalone/run_app_server.sh'
+2020-05-21 22:40:44,326 INFO spawnerr: can't find command './srv/standalone/run_app_server.sh'
+2020-05-21 22:40:46,330 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 22:40:47,332 INFO spawnerr: can't find command './srv/standalone/run_app_server.sh'
+2020-05-21 22:40:47,332 INFO gave up: app_server entered FATAL state, too many start retries too quickly
+2020-05-21 22:42:03,623 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 22:42:03,627 INFO RPC interface 'supervisor' initialized
+2020-05-21 22:42:03,627 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 22:42:03,627 INFO supervisord started with pid 12
+2020-05-21 22:42:04,632 INFO spawned: 'app_server' with pid 14
+2020-05-21 22:42:04,638 INFO spawned: 'dns_server' with pid 15
+2020-05-21 22:42:09,856 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 22:42:09,857 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 22:44:55,185 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-21 22:44:55,188 INFO RPC interface 'supervisor' initialized
+2020-05-21 22:44:55,189 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-21 22:44:55,189 INFO supervisord started with pid 11
+2020-05-21 22:44:56,192 INFO spawned: 'app_server' with pid 13
+2020-05-21 22:44:56,194 INFO spawned: 'dns_server' with pid 14
+2020-05-21 22:45:01,417 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-21 22:45:01,417 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-22 09:32:18,652 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-22 09:32:18,655 INFO RPC interface 'supervisor' initialized
+2020-05-22 09:32:18,655 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-22 09:32:18,656 INFO supervisord started with pid 11
+2020-05-22 09:32:19,661 INFO spawned: 'app_server' with pid 13
+2020-05-22 09:32:19,667 INFO spawned: 'dns_server' with pid 14
+2020-05-22 09:32:24,882 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-22 09:32:24,882 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 10:22:42,239 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 10:22:42,546 INFO RPC interface 'supervisor' initialized
+2020-05-29 10:22:42,546 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 10:22:42,546 INFO supervisord started with pid 11
+2020-05-29 10:22:43,550 INFO spawned: 'app_server' with pid 13
+2020-05-29 10:22:43,553 INFO spawned: 'dns_server' with pid 14
+2020-05-29 10:22:48,901 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 10:22:48,902 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 10:24:39,731 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 10:24:39,734 INFO RPC interface 'supervisor' initialized
+2020-05-29 10:24:39,735 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 10:24:39,735 INFO supervisord started with pid 11
+2020-05-29 10:24:40,740 INFO spawned: 'app_server' with pid 13
+2020-05-29 10:24:40,747 INFO spawned: 'dns_server' with pid 14
+2020-05-29 10:24:45,958 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 10:24:45,958 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 10:25:45,631 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 10:25:45,635 INFO RPC interface 'supervisor' initialized
+2020-05-29 10:25:45,635 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 10:25:45,635 INFO supervisord started with pid 12
+2020-05-29 10:25:46,640 INFO spawned: 'app_server' with pid 14
+2020-05-29 10:25:46,646 INFO spawned: 'dns_server' with pid 15
+2020-05-29 10:25:48,831 INFO exited: dns_server (exit status 1; not expected)
+2020-05-29 10:25:49,837 INFO spawned: 'dns_server' with pid 20
+2020-05-29 10:25:51,842 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 10:25:53,853 INFO exited: dns_server (exit status 1; not expected)
+2020-05-29 10:25:55,859 INFO spawned: 'dns_server' with pid 22
+2020-05-29 10:25:58,834 INFO exited: dns_server (exit status 1; not expected)
+2020-05-29 10:26:01,839 INFO spawned: 'dns_server' with pid 24
+2020-05-29 10:35:09,524 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 10:35:09,527 INFO RPC interface 'supervisor' initialized
+2020-05-29 10:35:09,528 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 10:35:09,528 INFO supervisord started with pid 11
+2020-05-29 10:35:10,530 INFO spawned: 'app_server' with pid 13
+2020-05-29 10:35:10,532 INFO spawned: 'dns_server' with pid 14
+2020-05-29 10:35:15,598 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 10:35:15,598 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 10:35:15,667 INFO exited: dns_server (exit status 1; not expected)
+2020-05-29 10:35:16,674 INFO spawned: 'dns_server' with pid 19
+2020-05-29 10:35:20,679 INFO exited: dns_server (exit status 1; not expected)
+2020-05-29 10:35:21,684 INFO spawned: 'dns_server' with pid 21
+2020-05-29 10:35:25,695 INFO exited: dns_server (exit status 1; not expected)
+2020-05-29 10:35:27,699 INFO spawned: 'dns_server' with pid 23
+2020-05-29 10:35:32,705 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 10:35:44,486 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 10:35:44,489 INFO RPC interface 'supervisor' initialized
+2020-05-29 10:35:44,489 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 10:35:44,489 INFO supervisord started with pid 12
+2020-05-29 10:35:45,495 INFO spawned: 'app_server' with pid 14
+2020-05-29 10:35:45,502 INFO spawned: 'dns_server' with pid 15
+2020-05-29 10:35:50,710 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 10:35:50,710 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 10:42:51,729 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 10:42:51,732 INFO RPC interface 'supervisor' initialized
+2020-05-29 10:42:51,733 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 10:42:51,733 INFO supervisord started with pid 11
+2020-05-29 10:42:52,735 INFO spawned: 'app_server' with pid 13
+2020-05-29 10:42:52,737 INFO spawned: 'dns_server' with pid 14
+2020-05-29 10:42:57,920 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 10:42:57,920 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 10:48:00,487 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 10:48:00,490 INFO RPC interface 'supervisor' initialized
+2020-05-29 10:48:00,490 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 10:48:00,491 INFO supervisord started with pid 13
+2020-05-29 10:48:01,496 INFO spawned: 'app_server' with pid 15
+2020-05-29 10:48:01,501 INFO spawned: 'dns_server' with pid 16
+2020-05-29 10:48:06,700 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 10:48:06,700 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 10:52:40,851 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 10:52:40,855 INFO RPC interface 'supervisor' initialized
+2020-05-29 10:52:40,855 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 10:52:40,855 INFO supervisord started with pid 11
+2020-05-29 10:52:41,861 INFO spawned: 'app_server' with pid 13
+2020-05-29 10:52:41,863 INFO spawned: 'dns_server' with pid 14
+2020-05-29 10:52:47,062 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 10:52:47,062 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 12:47:43,313 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 12:47:43,316 INFO RPC interface 'supervisor' initialized
+2020-05-29 12:47:43,316 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 12:47:43,317 INFO supervisord started with pid 11
+2020-05-29 12:47:44,319 INFO spawned: 'app_server' with pid 13
+2020-05-29 12:47:44,321 INFO spawned: 'dns_server' with pid 14
+2020-05-29 12:47:44,725 INFO exited: dns_server (exit status 1; not expected)
+2020-05-29 12:47:45,730 INFO spawned: 'dns_server' with pid 19
+2020-05-29 12:47:46,124 INFO exited: dns_server (exit status 1; not expected)
+2020-05-29 12:47:48,131 INFO spawned: 'dns_server' with pid 21
+2020-05-29 12:47:48,525 INFO exited: dns_server (exit status 1; not expected)
+2020-05-29 12:47:49,526 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 12:47:51,534 INFO spawned: 'dns_server' with pid 23
+2020-05-29 12:47:51,991 INFO exited: dns_server (exit status 1; not expected)
+2020-05-29 12:47:52,993 INFO gave up: dns_server entered FATAL state, too many start retries too quickly
+2020-05-29 12:48:31,803 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 12:48:31,807 INFO RPC interface 'supervisor' initialized
+2020-05-29 12:48:31,807 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 12:48:31,807 INFO supervisord started with pid 11
+2020-05-29 12:48:32,814 INFO spawned: 'app_server' with pid 13
+2020-05-29 12:48:32,820 INFO spawned: 'dns_server' with pid 14
+2020-05-29 12:48:38,029 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 12:48:38,030 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 12:48:56,117 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 12:48:56,121 INFO RPC interface 'supervisor' initialized
+2020-05-29 12:48:56,121 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 12:48:56,121 INFO supervisord started with pid 11
+2020-05-29 12:48:57,126 INFO spawned: 'app_server' with pid 13
+2020-05-29 12:48:57,128 INFO spawned: 'dns_server' with pid 14
+2020-05-29 12:49:02,362 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 12:49:02,362 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 12:49:21,809 INFO exited: dns_server (exit status 1; not expected)
+2020-05-29 12:49:22,815 INFO spawned: 'dns_server' with pid 19
+2020-05-29 12:49:27,823 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 12:52:02,721 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 12:52:02,725 INFO RPC interface 'supervisor' initialized
+2020-05-29 12:52:02,725 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 12:52:02,725 INFO supervisord started with pid 11
+2020-05-29 12:52:03,730 INFO spawned: 'app_server' with pid 13
+2020-05-29 12:52:03,736 INFO spawned: 'dns_server' with pid 14
+2020-05-29 12:52:08,932 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 12:52:08,933 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 12:59:38,880 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 12:59:38,884 INFO RPC interface 'supervisor' initialized
+2020-05-29 12:59:38,885 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 12:59:38,885 INFO supervisord started with pid 11
+2020-05-29 12:59:39,890 INFO spawned: 'app_server' with pid 13
+2020-05-29 12:59:39,893 INFO spawned: 'dns_server' with pid 14
+2020-05-29 12:59:45,139 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 12:59:45,140 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 13:00:41,428 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 13:00:41,432 INFO RPC interface 'supervisor' initialized
+2020-05-29 13:00:41,432 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 13:00:41,432 INFO supervisord started with pid 11
+2020-05-29 13:00:42,437 INFO spawned: 'app_server' with pid 13
+2020-05-29 13:00:42,443 INFO spawned: 'dns_server' with pid 14
+2020-05-29 13:00:47,693 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 13:00:47,694 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 13:01:57,047 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 13:01:57,050 INFO RPC interface 'supervisor' initialized
+2020-05-29 13:01:57,050 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 13:01:57,051 INFO supervisord started with pid 11
+2020-05-29 13:01:58,056 INFO spawned: 'app_server' with pid 13
+2020-05-29 13:01:58,062 INFO spawned: 'dns_server' with pid 14
+2020-05-29 13:02:03,279 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 13:02:03,279 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 15:05:07,159 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 15:05:07,165 INFO RPC interface 'supervisor' initialized
+2020-05-29 15:05:07,165 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 15:05:07,166 INFO supervisord started with pid 11
+2020-05-29 15:05:08,171 INFO spawned: 'app_server' with pid 13
+2020-05-29 15:05:08,177 INFO spawned: 'dns_server' with pid 14
+2020-05-29 15:05:13,393 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 15:05:13,393 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 15:06:56,571 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-05-29 15:06:56,575 INFO RPC interface 'supervisor' initialized
+2020-05-29 15:06:56,575 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-05-29 15:06:56,576 INFO supervisord started with pid 14
+2020-05-29 15:06:57,580 INFO spawned: 'app_server' with pid 16
+2020-05-29 15:06:57,584 INFO spawned: 'dns_server' with pid 17
+2020-05-29 15:07:02,799 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-05-29 15:07:02,800 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 08:38:04,020 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-10-02 08:38:04,028 INFO RPC interface 'supervisor' initialized
+2020-10-02 08:38:04,028 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-02 08:38:04,028 INFO supervisord started with pid 11
+2020-10-02 08:38:05,032 INFO spawned: 'app_server' with pid 13
+2020-10-02 08:38:05,037 INFO spawned: 'dns_server' with pid 14
+2020-10-02 08:38:10,390 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 08:38:10,391 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 08:56:19,103 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-10-02 08:56:19,109 INFO RPC interface 'supervisor' initialized
+2020-10-02 08:56:19,109 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-02 08:56:19,110 INFO supervisord started with pid 11
+2020-10-02 08:56:20,113 INFO spawned: 'app_server' with pid 13
+2020-10-02 08:56:20,115 INFO spawned: 'dns_server' with pid 14
+2020-10-02 08:56:26,030 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 08:56:26,030 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 09:07:12,665 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-10-02 09:07:12,672 INFO RPC interface 'supervisor' initialized
+2020-10-02 09:07:12,672 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-02 09:07:12,672 INFO supervisord started with pid 11
+2020-10-02 09:07:13,678 INFO spawned: 'app_server' with pid 13
+2020-10-02 09:07:13,685 INFO spawned: 'dns_server' with pid 14
+2020-10-02 09:07:19,621 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 09:07:19,622 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 09:09:18,348 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-10-02 09:09:18,354 INFO RPC interface 'supervisor' initialized
+2020-10-02 09:09:18,354 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-02 09:09:18,354 INFO supervisord started with pid 11
+2020-10-02 09:09:19,360 INFO spawned: 'app_server' with pid 13
+2020-10-02 09:09:19,367 INFO spawned: 'dns_server' with pid 14
+2020-10-02 09:09:24,566 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 09:09:24,566 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 09:18:08,236 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-10-02 09:18:08,242 INFO RPC interface 'supervisor' initialized
+2020-10-02 09:18:08,242 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-02 09:18:08,243 INFO supervisord started with pid 11
+2020-10-02 09:18:09,247 INFO spawned: 'app_server' with pid 13
+2020-10-02 09:18:09,260 INFO spawned: 'dns_server' with pid 14
+2020-10-02 09:18:15,042 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 09:18:15,043 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 09:20:20,881 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-10-02 09:20:20,890 INFO RPC interface 'supervisor' initialized
+2020-10-02 09:20:20,891 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-02 09:20:20,891 INFO supervisord started with pid 11
+2020-10-02 09:20:21,896 INFO spawned: 'app_server' with pid 13
+2020-10-02 09:20:21,905 INFO spawned: 'dns_server' with pid 14
+2020-10-02 09:20:27,756 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 09:20:27,757 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 09:23:56,192 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-10-02 09:23:56,199 INFO RPC interface 'supervisor' initialized
+2020-10-02 09:23:56,199 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-02 09:23:56,199 INFO supervisord started with pid 11
+2020-10-02 09:23:57,204 INFO spawned: 'app_server' with pid 13
+2020-10-02 09:23:57,211 INFO spawned: 'dns_server' with pid 14
+2020-10-02 09:24:03,166 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 09:24:03,167 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 09:31:40,656 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-10-02 09:31:40,663 INFO RPC interface 'supervisor' initialized
+2020-10-02 09:31:40,663 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-02 09:31:40,664 INFO supervisord started with pid 11
+2020-10-02 09:31:41,669 INFO spawned: 'app_server' with pid 13
+2020-10-02 09:31:41,677 INFO spawned: 'dns_server' with pid 14
+2020-10-02 09:31:47,339 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 09:31:47,339 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 09:32:55,143 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-10-02 09:32:55,151 INFO RPC interface 'supervisor' initialized
+2020-10-02 09:32:55,151 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-02 09:32:55,151 INFO supervisord started with pid 11
+2020-10-02 09:32:56,154 INFO spawned: 'app_server' with pid 13
+2020-10-02 09:32:56,158 INFO spawned: 'dns_server' with pid 14
+2020-10-02 09:33:01,188 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 09:33:01,188 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 09:42:54,616 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-10-02 09:42:54,625 INFO RPC interface 'supervisor' initialized
+2020-10-02 09:42:54,625 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2020-10-02 09:42:54,625 INFO supervisord started with pid 11
+2020-10-02 09:42:55,632 INFO spawned: 'app_server' with pid 13
+2020-10-02 09:42:55,642 INFO spawned: 'dns_server' with pid 14
+2020-10-02 09:43:01,550 INFO success: app_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2020-10-02 09:43:01,550 INFO success: dns_server entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)

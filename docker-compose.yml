@@ -1,0 +1,33 @@
+version: '3'
+services:
+  postgres:
+    container_name: dynamicdns-postgres
+    image: postgres:12-alpine
+    # ports:
+    #   - '5432:5432'
+    environment:
+      POSTGRES_DB: dynamicdns
+      POSTGRES_PASSWORD: password
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+
+  dynamicdns:
+    container_name: dynamicdns
+    build: .
+    ports:
+      - "8008:80"
+      - "8053:53/udp"
+    environment:
+      ENV: dev
+      POSTGRES_HOST: postgres
+      POSTGRES_DATABASE: dynamicdns
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      ADMIN_USER: admin
+      ADMIN_PASSWORD: password
+      RACKSPACE_USERNAME: epixstudios
+      RACKSPACE_API_KEY: f6826ec551af4207a6d5aa7a9ab0a0b9
+    volumes:
+      - ./standalone:/srv/standalone
+    depends_on:
+      - postgres
