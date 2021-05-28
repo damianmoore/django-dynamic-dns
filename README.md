@@ -37,8 +37,6 @@ Before adding your domains to the system, you will need to make a couple of addi
         },
     }
 
-Depending on the plugins you use, you may need to install Python dependencies. The file `optional-requirements.txt` lists which requirements are required and running `pip install -r optional-requirements.txt` will install them all.
-
 
 URL configuration
 -----------------
@@ -147,3 +145,11 @@ Future features
 
   * Adding more DNS provider plugins
   * Support for DNSSEC in the built-in DNS server
+
+
+Releasing
+---------
+First update the version numbers in `setup.py` then run the following to upload source and wheel packages.
+
+    python setup.py sdist upload
+    python setup.py bdist_wheel upload

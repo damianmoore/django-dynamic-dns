@@ -25,8 +25,8 @@ services:
       POSTGRES_PASSWORD: password
       ADMIN_USER: admin
       ADMIN_PASSWORD: password
-      RACKSPACE_USERNAME: epixstudios
-      RACKSPACE_API_KEY: f6826ec551af4207a6d5aa7a9ab0a0b9
+      RACKSPACE_USERNAME: YOUR_USERNAME
+      RACKSPACE_API_KEY: YOUR_API_KEY
     volumes:
       - ./standalone:/srv/standalone
     depends_on:

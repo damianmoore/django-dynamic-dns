@@ -26,3 +26,5 @@ WORKDIR /srv/standalone
 # RUN python /srv/standalone/manage.py collectstatic --link --noinput
 
 CMD ./run.sh
+
+EXPOSE 80
