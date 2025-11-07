@@ -1,33 +1,49 @@
-version: '3'
 services:
   postgres:
     container_name: dynamicdns-postgres
-    image: postgres:12-alpine
+    image: postgres:18-alpine
     # ports:
     #   - '5432:5432'
     environment:
-      POSTGRES_DB: dynamicdns
-      POSTGRES_PASSWORD: password
+      POSTGRES_DB: ${POSTGRES_DATABASE:-dynamicdns}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+      PGTZ: UTC
+      TZ: UTC
     volumes:
-      - ./data/db:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
 
   dynamicdns:
     container_name: dynamicdns
     build: .
     ports:
-      - "8008:80"
-      - "8053:53/udp"
+      - "${HTTP_PORT:-8008}:80"
+      - "${DNS_PORT:-8053}:53/udp"
     environment:
-      ENV: dev
+      ENV: ${ENV:-dev}
       POSTGRES_HOST: postgres
-      POSTGRES_DATABASE: dynamicdns
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
-      ADMIN_USER: admin
-      ADMIN_PASSWORD: password
-      RACKSPACE_USERNAME: YOUR_USERNAME
-      RACKSPACE_API_KEY: YOUR_API_KEY
+      POSTGRES_DATABASE: ${POSTGRES_DATABASE:-dynamicdns}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
+      ADMIN_USER: ${ADMIN_USER:-admin}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-password}
+      # Django security settings (optional, comma-separated)
+      ALLOWED_HOSTS: ${ALLOWED_HOSTS:-}
+      CSRF_TRUSTED_ORIGINS: ${CSRF_TRUSTED_ORIGINS:-}
+      # Rackspace DNS provider (optional)
+      RACKSPACE_USERNAME: ${RACKSPACE_USERNAME:-}
+      RACKSPACE_API_KEY: ${RACKSPACE_API_KEY:-}
+      # DigitalOcean DNS provider (optional)
+      DIGITALOCEAN_CLIENT_ID: ${DIGITALOCEAN_CLIENT_ID:-}
+      DIGITALOCEAN_API_KEY: ${DIGITALOCEAN_API_KEY:-}
+      # AWS Route53 DNS provider (optional)
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:-}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY:-}
+      AWS_REGION: ${AWS_REGION:-us-east-1}
+      AWS_HOSTED_ZONE_ID: ${AWS_HOSTED_ZONE_ID:-}
     volumes:
       - ./standalone:/srv/standalone
     depends_on:
       - postgres
+
+volumes:
+  postgres_data:

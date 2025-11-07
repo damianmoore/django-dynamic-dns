@@ -12,9 +12,21 @@ SECRET_KEY = 'o6hk&s9ffvgn5g3k$))i=@7k16g#ai@oom4m#d)bw(oumpp022'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('ENV', 'prd') != 'prd'
 
-TEMPLATE_DEBUG = DEBUG
+# Allow all hosts by default, but can be overridden via environment variable
+if os.environ.get('ALLOWED_HOSTS'):
+    ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(',')
+else:
+    ALLOWED_HOSTS = ['*']
 
-ALLOWED_HOSTS = ['*']
+# CSRF settings for production
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:8008',
+    'http://127.0.0.1:8008',
+]
+
+# Allow additional trusted origins from environment variable
+if os.environ.get('CSRF_TRUSTED_ORIGINS'):
+    CSRF_TRUSTED_ORIGINS.extend(os.environ.get('CSRF_TRUSTED_ORIGINS').split(','))
 
 
 # Application definition
@@ -32,6 +44,7 @@ INSTALLED_APPS = (
 
 MIDDLEWARE = (
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -56,6 +69,9 @@ if os.environ.get('POSTGRES_HOST'):
             'NAME':     os.environ.get('POSTGRES_DATABASE', 'dynamicdns'),
             'USER':     os.environ.get('POSTGRES_USER', 'root'),
             'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'password'),
+            'OPTIONS': {
+                'options': '-c timezone=utc'
+            },
         }
     }
 else:
@@ -84,6 +100,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 TEMPLATES = [
@@ -117,6 +134,13 @@ DYNAMICDNS_PROVIDERS = {
     #     'client_id': 'YOUR_CLIENT_ID',
     #     'api_key': 'YOUR_API_KEY',
     # },
+    # 'aws': {
+    #     'plugin': 'dynamicdns.plugins.AWS',
+    #     'aws_access_key_id': 'YOUR_AWS_ACCESS_KEY_ID',
+    #     'aws_secret_access_key': 'YOUR_AWS_SECRET_ACCESS_KEY',
+    #     'aws_region': 'us-east-1',
+    #     'hosted_zone_id': 'YOUR_HOSTED_ZONE_ID',
+    # },
 }
 
 # DNS provider plugins can be configured via environment variables (useful with Docker)
@@ -132,3 +156,14 @@ if 'DIGITALOCEAN_CLIENT_ID' in os.environ:
         'client_id': os.environ.get('DIGITALOCEAN_CLIENT_ID'),
         'api_key': os.environ.get('DIGITALOCEAN_API_KEY'),
     }
+if 'AWS_ACCESS_KEY_ID' in os.environ:
+    DYNAMICDNS_PROVIDERS['aws'] = {
+        'plugin': 'dynamicdns.plugins.AWS',
+        'aws_access_key_id': os.environ.get('AWS_ACCESS_KEY_ID'),
+        'aws_secret_access_key': os.environ.get('AWS_SECRET_ACCESS_KEY'),
+        'aws_region': os.environ.get('AWS_REGION', 'us-east-1'),
+        'hosted_zone_id': os.environ.get('AWS_HOSTED_ZONE_ID'),
+    }
+
+# Default primary key field type for Django 4.2+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

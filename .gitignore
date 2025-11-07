@@ -1,5 +1,7 @@
 *.py[cod]
 data
+.env
+standalone/supervisord.log
 
 # C extensions
 *.so

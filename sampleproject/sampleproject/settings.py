@@ -22,8 +22,6 @@ SECRET_KEY = 'o6hk&s9ffvgn5g3k$))i=@7k16g#ai@oom4m#d)bw(oumpp022'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-TEMPLATE_DEBUG = True
-
 ALLOWED_HOSTS = []
 
 
@@ -39,7 +37,8 @@ INSTALLED_APPS = (
     'dynamicdns',
 )
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = (
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -97,4 +96,30 @@ DYNAMICDNS_PROVIDERS = {
         'client_id': 'YOUR_CLIENT_ID',
         'api_key': 'YOUR_API_KEY',
     },
+    'aws': {
+        'plugin': 'dynamicdns.plugins.AWS',
+        'aws_access_key_id': 'YOUR_AWS_ACCESS_KEY_ID',
+        'aws_secret_access_key': 'YOUR_AWS_SECRET_ACCESS_KEY',
+        'aws_region': 'us-east-1',
+        'hosted_zone_id': 'YOUR_HOSTED_ZONE_ID',
+    },
 }
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+# Default primary key field type for Django 4.2+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

@@ -7,7 +7,7 @@ Machines on dynamic IPs can call this service at regular intervals (e.g. via cro
 
 It's recommended that new users check out the `sampleproject` for an example setup.
 
-Domains/subdomains that are going to be managed as aliases to dynamic IP addresses are added to the database through Django's admin interface. The last known IP for a domain is stored against the name so the service knows whether the IP is different from what it was previously. A plugin infrastructure is in place which makes it easy to add new DNS service providers. So far **Rackspace Cloud DNS** and **DigitalOcean** are the only DNS service plugins included but I'd be very happy to receive contributions for other ones.
+Domains/subdomains that are going to be managed as aliases to dynamic IP addresses are added to the database through Django's admin interface. The last known IP for a domain is stored against the name so the service knows whether the IP is different from what it was previously. A plugin infrastructure is in place which makes it easy to add new DNS service providers. So far **Rackspace Cloud DNS**, **DigitalOcean** and **AWS Route53** are the only DNS service plugins included but I'd be very happy to receive contributions for other ones.
 
 
 Server configuration
@@ -35,7 +35,79 @@ Before adding your domains to the system, you will need to make a couple of addi
             'client_id': 'YOUR_CLIENT_ID',
             'api_key': 'YOUR_API_KEY',
         },
+        'aws': {
+            'plugin': 'dynamicdns.plugins.AWS',
+            'aws_access_key_id': 'YOUR_AWS_ACCESS_KEY_ID',
+            'aws_secret_access_key': 'YOUR_AWS_SECRET_ACCESS_KEY',
+            'aws_region': 'us-east-1',  # Optional, defaults to us-east-1
+            'hosted_zone_id': 'YOUR_HOSTED_ZONE_ID',
+        },
     }
+
+    # Static files configuration (required for Django admin interface)
+    STATIC_URL = '/static/'
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+Docker Deployment
+-----------------
+
+A Docker deployment option is available using Docker Compose. This is the easiest way to get started:
+
+1. Copy `.env.example` to `.env` and configure your settings:
+
+```bash
+cp .env.example .env
+```
+
+2. Edit `.env` to set your configuration:
+
+```bash
+# Application Environment
+ENV=dev  # or 'prd' for production
+
+# Port Configuration
+HTTP_PORT=8008
+DNS_PORT=8053
+
+# Database Configuration
+POSTGRES_DATABASE=dynamicdns
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=password
+
+# Admin User Configuration
+ADMIN_USER=admin
+ADMIN_PASSWORD=password
+
+# Django Security Configuration
+ALLOWED_HOSTS=yourdomain.com,localhost  # Comma-separated list
+CSRF_TRUSTED_ORIGINS=https://yourdomain.com,http://localhost:8008
+
+# DNS Provider Configuration (choose one)
+# For AWS Route53:
+AWS_ACCESS_KEY_ID=your_key
+AWS_SECRET_ACCESS_KEY=your_secret
+AWS_REGION=us-east-1
+AWS_HOSTED_ZONE_ID=your_zone_id
+```
+
+3. Build and run with Docker Compose:
+
+```bash
+docker-compose up --build
+```
+
+The application will be available at:
+- Web interface: `http://localhost:8008`
+- Admin interface: `http://localhost:8008/admin/`
+- DNS server: `UDP port 8053`
+
+**Note:** The standalone Docker deployment includes:
+- PostgreSQL database
+- Static file serving via WhiteNoise (no nginx required)
+- Automatic database migrations on startup
+- Auto-created admin user
+- Environment-based configuration for all DNS providers
 
 
 URL configuration
