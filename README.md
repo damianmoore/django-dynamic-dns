@@ -7,7 +7,7 @@ Machines on dynamic IPs can call this service at regular intervals (e.g. via cro
 
 It's recommended that new users check out the `sampleproject` for an example setup.
 
-Domains/subdomains that are going to be managed as aliases to dynamic IP addresses are added to the database through Django's admin interface. The last known IP for a domain is stored against the name so the service knows whether the IP is different from what it was previously. A plugin infrastructure is in place which makes it easy to add new DNS service providers. So far **Rackspace Cloud DNS**, **DigitalOcean** and **AWS Route53** are the only DNS service plugins included but I'd be very happy to receive contributions for other ones.
+Domains/subdomains that are going to be managed as aliases to dynamic IP addresses are added to the database through Django's admin interface. The last known IP for a domain is stored against the name so the service knows whether the IP is different from what it was previously. A plugin infrastructure is in place which makes it easy to add new DNS service providers. So far **Rackspace Cloud DNS**, **DigitalOcean**, **AWS Route53** and **Hetzner DNS** are the currently available DNS plugins but I'd be very happy to receive contributions for other ones.
 
 
 Server configuration
@@ -41,6 +41,11 @@ Before adding your domains to the system, you will need to make a couple of addi
             'aws_secret_access_key': 'YOUR_AWS_SECRET_ACCESS_KEY',
             'aws_region': 'us-east-1',  # Optional, defaults to us-east-1
             'hosted_zone_id': 'YOUR_HOSTED_ZONE_ID',
+        },
+        'hetzner': {
+            'plugin': 'dynamicdns.plugins.Hetzner',
+            'api_token': 'YOUR_HETZNER_DNS_API_TOKEN',
+            'zone_id': 'YOUR_ZONE_ID',  # Optional, will be looked up from domain if not provided
         },
     }
 
@@ -83,12 +88,24 @@ ADMIN_PASSWORD=password
 ALLOWED_HOSTS=yourdomain.com,localhost  # Comma-separated list
 CSRF_TRUSTED_ORIGINS=https://yourdomain.com,http://localhost:8008
 
-# DNS Provider Configuration (choose one)
+# DNS Provider Configuration (choose one or more)
 # For AWS Route53:
 AWS_ACCESS_KEY_ID=your_key
 AWS_SECRET_ACCESS_KEY=your_secret
 AWS_REGION=us-east-1
 AWS_HOSTED_ZONE_ID=your_zone_id
+
+# For Hetzner DNS:
+HETZNER_API_TOKEN=your_api_token
+HETZNER_ZONE_ID=your_zone_id  # Optional
+
+# For Rackspace:
+RACKSPACE_USERNAME=your_username
+RACKSPACE_API_KEY=your_api_key
+
+# For DigitalOcean:
+DIGITALOCEAN_CLIENT_ID=your_client_id
+DIGITALOCEAN_API_KEY=your_api_key
 ```
 
 3. Build and run with Docker Compose:
