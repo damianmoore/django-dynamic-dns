@@ -14,7 +14,7 @@ The project uses a plugin architecture for DNS providers located in `dynamicdns/
 
 - **Base class**: `DynamicDnsPlugin` in [dynamicdns/plugins/__init__.py](dynamicdns/plugins/__init__.py) defines the interface
 - **Plugin loading**: [dynamicdns/utils.py](dynamicdns/utils.py) `update_dns_record()` function dynamically imports and instantiates plugins using `importlib`
-- **Available plugins**: Dummy (testing), Rackspace, DigitalOcean, AWS Route53
+- **Available plugins**: Dummy (testing), Rackspace, DigitalOcean, AWS Route53, Hetzner Cloud DNS
 - Each plugin receives `domain` and `config` (from settings) and implements `update(ip)` method
 
 ### DNS Update Flow
@@ -125,6 +125,11 @@ DYNAMICDNS_PROVIDERS = {
         'aws_region': 'us-east-1',  # Optional, defaults to us-east-1
         'hosted_zone_id': 'YOUR_HOSTED_ZONE_ID',
     },
+    'hetzner': {
+        'plugin': 'dynamicdns.plugins.Hetzner',
+        'api_token': 'YOUR_HETZNER_API_TOKEN',
+        'zone_id': 'YOUR_HETZNER_ZONE_ID',
+    },
 }
 ```
 
@@ -135,6 +140,7 @@ The standalone project supports configuring DNS providers via environment variab
 - **AWS Route53**: `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION` (optional, defaults to us-east-1), `AWS_HOSTED_ZONE_ID`
 - **Rackspace**: `RACKSPACE_USERNAME`, `RACKSPACE_API_KEY`
 - **DigitalOcean**: `DIGITALOCEAN_CLIENT_ID`, `DIGITALOCEAN_API_KEY`
+- **Hetzner Cloud DNS**: `HETZNER_API_TOKEN`, `HETZNER_ZONE_ID`
 
 Make sure to update `.env.example` whenever new environment variables are used in the project.
 

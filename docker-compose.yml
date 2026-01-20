@@ -40,6 +40,9 @@ services:
       AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY:-}
       AWS_REGION: ${AWS_REGION:-us-east-1}
       AWS_HOSTED_ZONE_ID: ${AWS_HOSTED_ZONE_ID:-}
+      # Hetzner Cloud DNS provider (optional)
+      HETZNER_API_TOKEN: ${HETZNER_API_TOKEN:-}
+      HETZNER_ZONE_ID: ${HETZNER_ZONE_ID:-}
     volumes:
       - ./standalone:/srv/standalone
     depends_on:

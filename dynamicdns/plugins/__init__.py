@@ -11,3 +11,4 @@ from .dummy import Dummy
 from .rackspace import Rackspace
 from .digitalocean import DigitalOcean
 from .aws import AWS
+from .hetzner import Hetzner

@@ -164,6 +164,12 @@ if 'AWS_ACCESS_KEY_ID' in os.environ:
         'aws_region': os.environ.get('AWS_REGION', 'us-east-1'),
         'hosted_zone_id': os.environ.get('AWS_HOSTED_ZONE_ID'),
     }
+if 'HETZNER_API_TOKEN' in os.environ:
+    DYNAMICDNS_PROVIDERS['hetzner'] = {
+        'plugin': 'dynamicdns.plugins.Hetzner',
+        'api_token': os.environ.get('HETZNER_API_TOKEN'),
+        'zone_id': os.environ.get('HETZNER_ZONE_ID'),
+    }
 
 # Default primary key field type for Django 4.2+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
