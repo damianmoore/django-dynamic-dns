@@ -173,3 +173,30 @@ if 'HETZNER_API_TOKEN' in os.environ:
 
 # Default primary key field type for Django 4.2+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'stdout': {
+            'class': 'logging.StreamHandler',
+            'stream': 'ext://sys.stdout',
+        },
+    },
+    'root': {
+        'handlers': ['stdout'],
+        'level': 'WARNING',
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['stdout'],
+            'level': 'WARNING',
+            'propagate': False,
+        },
+        'django.request': {
+            'handlers': ['stdout'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+    },
+}
