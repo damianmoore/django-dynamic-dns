@@ -42,7 +42,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: ${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }}
+          images: ${{ steps.login-ecr.outputs.registry }}/django-dynamic-dns
           tags: |
             type=raw,latest
             type=sha
@@ -86,7 +86,7 @@ jobs:
         run: |
           DOCKER_TAG=$(echo "${{ needs.build-and-push.outputs.tags }}" | sed -n '2p' | cut -d':' -f2)
           echo "DOCKER_TAG: $DOCKER_TAG"
-          kubectl set image deployment/dynamic-dns dynamic-dns=${{ steps.login-ecr.outputs.registry }}/${{ secrets.ECR_REPOSITORY }}:${DOCKER_TAG} -n default
+          kubectl set image deployment/dynamic-dns dynamic-dns=${{ steps.login-ecr.outputs.registry }}/django-dynamic-dns:${DOCKER_TAG} -n default
 
       - name: Wait for pod to start
         run: |
