@@ -8,17 +8,15 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
-    outputs:
-      tags: ${{ steps.meta.outputs.tags }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v4
 
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -29,32 +27,19 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v2
 
       - name: Login to container registry
-        uses: docker/login-action@v3
+        uses: docker/login-action@v4
         with:
           registry: ${{ steps.login-ecr.outputs.registry }}
           username: AWS
           password: ${{ steps.login-ecr.outputs.docker_password }}
 
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-
-      - name: Docker metadata
-        id: meta
-        uses: docker/metadata-action@v3
-        with:
-          images: ${{ steps.login-ecr.outputs.registry }}/django-dynamic-dns
-          tags: |
-            type=raw,latest
-            type=sha
-
       - name: Build and push
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           file: Dockerfile
           push: true
           platforms: linux/amd64
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ steps.login-ecr.outputs.registry }}/django-dynamic-dns:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -63,30 +48,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@v6
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-1
 
-      - name: Login to Amazon ECR
-        id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v2
-
       - name: Set up kubectl
-        uses: azure/setup-kubectl@v3
+        uses: azure/setup-kubectl@v4
 
       - name: Set up kubeconfig
-        uses: azure/k8s-set-context@v3
+        uses: azure/k8s-set-context@v4
         with:
           method: kubeconfig
           kubeconfig: ${{ secrets.KUBE_CONFIG }}
 
       - name: Deploy
-        run: |
-          DOCKER_TAG=$(echo "${{ needs.build-and-push.outputs.tags }}" | sed -n '2p' | cut -d':' -f2)
-          echo "DOCKER_TAG: $DOCKER_TAG"
-          kubectl set image deployment/dynamic-dns dynamic-dns=${{ steps.login-ecr.outputs.registry }}/django-dynamic-dns:${DOCKER_TAG} -n default
+        run: kubectl rollout restart deployment/dynamic-dns -n default
 
       - name: Wait for pod to start
         run: |
